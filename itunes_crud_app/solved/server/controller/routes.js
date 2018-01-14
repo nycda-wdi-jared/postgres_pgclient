@@ -8,8 +8,8 @@ if(process.env.DATABASE_URL){
 	dbUrl = process.env.DATABASE_URL
 } else {
 	dbUrl = {
-		user: process.argv.POSTGRES_USER,
-		password: process.argv.POSTGRES_PASSWORD,
+		user: process.env.POSTGRES_USER,
+		password: process.env.POSTGRES_PASSWORD,
 		database: 'itunes',
 		host: 'localhost',
 		port: 5432

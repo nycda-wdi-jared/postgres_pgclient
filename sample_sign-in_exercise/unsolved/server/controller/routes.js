@@ -7,8 +7,8 @@ var pg = require('pg');
 
 //you have to pick the database to connect to;
 var dbUrl = {
-	user: process.argv.POSTGRES_USER,
-	password: process.argv.POSTGRES_PASSWORD,
+	user: process.env.POSTGRES_USER,
+	password: process.env.POSTGRES_PASSWORD,
 	database: 'testdb',
 	host: 'localhost',
 	port: 5432
